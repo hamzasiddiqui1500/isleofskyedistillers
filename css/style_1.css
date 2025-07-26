@@ -1,0 +1,110 @@
+/* 
+Theme Name: Hello Elementor Child
+Theme URI: https://github.com/elementor/hello-theme/
+Description: Hello Elementor Child is a child theme of Hello Elementor, created by Elementor team
+Author: Elementor Team
+Author URI: https://elementor.com/
+Template: hello-elementor
+Version: 1.0.1
+Text Domain: hello-elementor-child
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+*/
+
+/*
+    Add your custom styles here
+*/
+.l-logo {
+        display: block; /* Initially show light logo */
+}
+.d-logo {
+        display: none; /* Initially hide dark logo */
+}
+.elementor-tab-title {
+    text-align: center !important;
+}
+.bottle-message input {
+    border-color: green !important;
+    border-width: 4px !important;
+}
+
+.parallax-section {
+    height: 100vh;
+    background-size: cover;
+    background-image: url('your-image-url.jpg');
+	background-attachment: fixed !important;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+/* For iOS devices */
+@supports (-webkit-overflow-scrolling: touch) {
+    .parallax-section {
+  -moz-background-size: cover;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+    }
+}
+
+
+#background-change{
+	background-repeat: no-repeat !important;
+	height: 100vh !important;
+    width: 100% !important;
+    background-size: cover !important;
+	background-position: center center;
+}
+.store-locator-item-container .store-locator-item div a {
+    color: black !important;
+}
+.gm-style-iw-a {
+    display: none !important;
+}
+
+input#store_locatore_get_btn {
+    margin-top: 10px !important;
+}
+
+bdi {
+    color: black !important;
+}
+.wpsl-address {
+    font-weight: 900;
+}
+.google-review-notice {
+                background-color: #f8fafc;
+                border: 2px solid #d1e7dd;
+                border-radius: 8px;
+                padding: 20px;
+                margin: 20px 0;
+                text-align: center;
+                color: #0f5132;
+}
+.google-review-notice h2 {
+                color: var(--e-global-color-primary); /* Elementor Primary Color */
+                font-size: 24px;
+                margin-bottom: 10px;
+}
+.google-review-notice p {
+                font-size: 16px;
+                margin-bottom: 15px;
+}
+.google-review-notice a {
+                background-color: var(--e-global-color-primary); /* Elementor Accent Color */
+                color: #ffffff;
+                padding: 10px 20px;
+                border-radius: 5px;
+                font-size: 16px;
+                text-decoration: none;
+}
+.google-review-notice a:hover {
+                background-color: var(--e-global-color-primary);
+}
